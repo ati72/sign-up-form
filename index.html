@@ -21,42 +21,44 @@
             </div>
             <div class="form-area">
                 <h1 class="form-title">Let's do this!</h1>
-                <form action="">
+                <form action="#" method="get" id="new-account-form">
                     <div class="input-area">
                         <div class="input-area-left">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name" id="first-name">
+                            <label for="first-name">*First Name</label>
+                            <input type="text" name="first-name" id="first-name" minlength="2" maxlength="30" required>
                         </div>
                         <div class="input-area-right">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="lastname" id="lastname">
+                            <label for="last-name">*Last Name</label>
+                            <input type="text" name="lastname" id="lastname" minlength="2" maxlength="30"  required>
                         </div>   
                     </div>
                     <div class="input-area">
                         <div class="input-area-left">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" id="email">
+                            <label for="email">*Email</label>
+                            <input type="email" name="email" id="email" required>
                         </div>
                         <div class="input-area-right">
-                            <label for="phone-num">Phone Number</label>
-                            <input type="tel" name="phone-num" id="phone-num">
+                            <label for="phone-num">*Phone Number</label>
+                            <input type="tel" name="phone-num" id="phone-num" required>
                         </div>                        
                     </div>
                     <div class="input-area">
                         <div class="input-area-left">
-                            <label for="password">Password</label>
-                            <input type="password" name="password" id="password">
+                            <label for="password">*Password</label>
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="input-area-left">
-                            <label for="conf-password">Confirm Password</label>
-                            <input type="password" name="conf-password" id="conf-password">
+                            <label for="conf-password">*Confirm Password</label>
+                            <input type="password" name="conf-password" id="conf-password" required>
                         </div>
                         
                     </div>
+                    
                 </form>
             </div>
             <div class="submit-area">
-                <button>Submit!</button>
+                <button class="submit-button" type="submit" form="new-account-form">Create Account</button>
+                <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Log in</a></p>
             </div>
         </div>
     </div>
