@@ -27,6 +27,10 @@ body {
     align-items: center;
 }
 
+.welcome-text {
+    display: block;
+}
+
 img {
     max-width: 100%;
 }
@@ -51,4 +55,8 @@ img {
 .input-area-left, .input-area-right {
     flex-direction: column;
     padding: 10px;
+}
+
+.span-italic {
+    font-style: italic;
 }
