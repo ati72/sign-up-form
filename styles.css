@@ -1,9 +1,8 @@
-
-
 body {
     margin: 0px;
     padding: 0px;
     height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-container {
@@ -29,6 +28,9 @@ body {
 
 .welcome-text {
     display: block;
+    padding: 50px;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 img {
@@ -41,11 +43,18 @@ img {
     position: absolute;
     top: 50%;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.1)
+    background-color: rgba(0, 0, 0, 0.2)
 }
+
+
 
 .form-area {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.form-title {
+    display: block;
+
 }
 
 .input-area, .input-area-left, .input-area-right {
@@ -59,4 +68,11 @@ img {
 
 .span-italic {
     font-style: italic;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(71, 68, 68);
 }
