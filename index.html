@@ -11,8 +11,10 @@
 
     <div class="main-container">
         <div class="left">
-            <img src="img/ren-ran-bBiuSdck8tU-unsplash.jpg" alt="Background image">
-            <img class="logo"  src="img/odin-lined.png" alt="Logo image">
+            <div class="logo-box">
+                <img class="logo"  src="img/odin-lined.png" alt="Logo image">
+                <p class="logo-text">Odin</p>
+            </div>
         </div>
         <div class="right">
             <div class="welcome-text">
@@ -21,7 +23,7 @@
             </div>
             <div class="form-area">
                 <h1 class="form-title">Let's do this!</h1>
-                <form action="#" method="get" id="new-account-form">
+                <form action="http://httpbin.org/post" method="post" id="new-account-form" target="_blank">
                     <div class="input-area">
                         <div class="input-area-left">
                             <label for="first-name">*First Name</label>
@@ -57,11 +59,30 @@
                 </form>
             </div>
             <div class="submit-area">
-                <button class="submit-button" type="submit" form="new-account-form">Create Account</button>
-                <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Log in</a></p>
+                <div class="submit-wrapper">
+                    <button class="submit-button" type="submit" form="new-account-form">Create Account</button>
+                    <p>Already have an account? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Log in</a></p>
+                </div>
+                
             </div>
         </div>
     </div>
     
 </body>
+<script>
+    const inputs = document.querySelectorAll('input');
+    const password = document.querySelector('input#password');
+    const confirmPassword = document.querySelector('input#conf-password');
+
+    inputs.forEach((input) => {
+        input.addEventListener('input', () => {
+            if(input.validity.valid) {
+                input.classList.remove('error');
+            } else {
+                input.classList.add('error');
+            }
+        })
+    });
+    
+</script>
 </html>

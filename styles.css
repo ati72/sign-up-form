@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -8,10 +13,16 @@ body {
 
 .main-container {
     display: flex;
+    height: 100vh;
 }
 
 .left {
     flex: 1 1 0;
+    display: flex;
+    background-image: url(img/ren-ran-bBiuSdck8tU-unsplash.jpg);
+    background-size: 100% 100%;
+    align-items: center;
+    justify-items: center;
 }
 
 .right {
@@ -39,24 +50,46 @@ img {
 }
 
 .logo {
-    max-height: 50%;
-    max-width: 50%;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.2)
+    max-height: 17%;
+    max-width: 17%;
+    padding: 10px;
+    object-fit: contain;
 }
 
+
+.logo-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.logo-text {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    font-family: "Norse-Bold";
+    margin: 0px;
+}
 
 
 .form-area {
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     justify-content: flex-start;
+    display: block;
+    padding-left: 50px;
 }
 
 .form-title {
    font-size: 24px;
 
+}
+
+form {
+    margin: 20px;
 }
 
 .input-area, .input-area-left, .input-area-right {
@@ -68,6 +101,28 @@ img {
     padding: 10px;
 }
 
+input {
+    width: 300px;
+    height: 26px;
+    border: 1px solid rgb(189, 178, 178);
+    border-radius: 8px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(135, 206, 250);
+}
+
+input:valid {
+    outline: none;
+    border: 1px solid rgb(65, 207, 84);
+}
+
+input.error {
+    outline: none;
+    border: 1px solid rgb(219, 63, 63);
+}
+
 .span-italic {
     font-style: italic;
 }
@@ -77,6 +132,16 @@ label {
     font-size: 12px;
     font-weight: 600;
     color: rgb(71, 68, 68);
+}
+
+.submit-area {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.submit-wrapper {
+    padding-left: 50px;
+    padding-top: 35px;
 }
 
 .submit-button {
